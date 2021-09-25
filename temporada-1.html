@@ -1,0 +1,981 @@
+
+<!DOCTYPE html>
+<html>
+
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: 2;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+ 
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+
+<center><h2  style="color:white" >Episodios da 1ª Temporada</h2></center>
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="btn-group">
+
+  <div class="column">
+
+  
+    <button style="width:100%" onclick="openModal();currentSlide(1)" class=" button hover-shadow cursor">episodio 1</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(2)" class=" button hover-shadow cursor">episodio 2</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(3)" class=" button hover-shadow cursor">episodio 3</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(4)" class="button hover-shadow cursor">episodio 4</button>
+  </div>
+  
+
+
+ <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(5)" class=" button hover-shadow cursor">eipsodio 5</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(6)" class=" button hover-shadow cursor">episodio 6</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(7)" class=" button hover-shadow cursor">episodio 7</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(8)" class=" button hover-shadow cursor">episodio 8</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(9)" class=" button hover-shadow cursor">episodio 9</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(10)" class=" button hover-shadow cursor">episodio 10</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(11)" class=" button hover-shadow cursor">episodio 11</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(12)" class=" button hover-shadow cursor">episodio 12</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(13)" class=" button hover-shadow cursor">episodio 13</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(14)" class=" button hover-shadow cursor">episodio 14</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(15)" class=" button hover-shadow cursor">episodio 15</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(16)" class=" button hover-shadow cursor">episodio 16</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(17)" class=" button hover-shadow cursor">episodio 17</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(18)" class=" button hover-shadow cursor">episodio 18</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(19)" class=" button hover-shadow cursor">episodio 19</button>
+  </div>
+  
+    <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(20)" class=" button hover-shadow cursor">episodio 20</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(21)" class=" button hover-shadow cursor">episodio 21</button>
+  </div>
+  
+  <div class="column">
+  
+    <button style="width:100%" onclick="openModal();currentSlide(22)" class=" button hover-shadow cursor">episodio 22</button>
+  </div>
+  
+  </div>
+</div>
+
+
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+  
+      
+      <center>
+      
+
+<link href=" /plyr.css " rel="stylesheet">
+  
+<style>body{margin:0px;background-color:#000;overflow:hidden;}.js-player{width:100%;height:100%;}</style>
+
+<script>function load(t){document.getElementById(t).style.display = 'none';}</script>
+  
+ 
+
+  <video class="js-player" width="100%" height="280" controls>
+  <source src="  
+
+
+http://www.assistirseriados.net/assistirs.php?v=5bf8d19a7a3ce809
+
+" type="video/mp4">
+  
+  
+</video>
+   <script src=" /plyr.min.js "></script>
+<script>
+const player = new Plyr('.js-player',{ratio:'16:7'});
+</script>
+
+      </center>
+      
+    </div>
+
+    <div class="mySlides">
+      
+      
+     <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="300"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="http://www.assistirseriados.net/assistirs.php?v=c8b2da2584db6498" type="video/mp4" />
+                  </video>
+
+      </center>
+      
+    </div>
+
+    <div class="mySlides">
+     
+      <center>
+       <video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="http://www.assistirseriados.net/assistirs.php?v=d88d7d657eab2291" type="video/mp4" />
+                  </video>
+      </center>
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=3059a53550c6e3a5
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+    </div>
+    
+     <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=d134899666792a09
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+http://www.assistirseriados.net/assistirs.php?v=1a72113faa32b911
+
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=760923025f2ce00f
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=9f9efac7ce2a5eb4
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=2d95ee445d3610f7
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=9233b1ff6c57ac6a
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=27293b4bb1f332d5
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=7c4e0309223d2996
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=4add9dfbfae92f94
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=3e87077cf18f276d
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=940fed2f176531d9
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                    http://www.assistirseriados.net/assistirs.php?v=b21d90a98446277e
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=affa4982b9b0f125
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=4fec0fa095e0f831
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=890cf1ee02d12031
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=35ef57e705d6bba
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=813476a4de699bd0
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <div class="mySlides">
+      
+      
+        <center>
+      
+<video
+                     id="my-video"
+                     class="video-js vjs-default-skin vjs-big-play-centered"
+                     controls
+                     preload="auto"
+                     width="90%"
+                     height="90%"
+                     poster=""
+                     data-setup="{}"
+                     >
+                     <source src="
+                     
+                     http://www.assistirseriados.net/assistirs.php?v=b332d7bdb2741cfa
+                     
+                     " type="video/mp4" />
+                  </video>
+
+      </center>
+      
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+
+
+    <div class="column">
+    
+      <img class="demo cursor" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1x5nNrKT-Gktu0wjmWTJPgGV9ZywdSmt1SvBY64iN98RDwtYY" style="width:30%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      
+    </div>
+    <div class="column">
+    
+      <img class="demo cursor" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1x5nNrKT-Gktu0wjmWTJPgGV9ZywdSmt1SvBY64iN98RDwtYY" style="width:30%" onclick="currentSlide(2)" alt="Snow">
+      
+    </div>
+    <div class="column">
+    
+      <img class="demo cursor" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1x5nNrKT-Gktu0wjmWTJPgGV9ZywdSmt1SvBY64iN98RDwtYY" style="width:30%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      
+    </div>
+    <div class="column">
+    
+      <img class="demo cursor" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1x5nNrKT-Gktu0wjmWTJPgGV9ZywdSmt1SvBY64iN98RDwtYY" style="width:30%" onclick="currentSlide(4)" alt="Northern Lights">
+      
+    </div>
+    
+    <div class="column">
+    
+      <img class="demo cursor" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1x5nNrKT-Gktu0wjmWTJPgGV9ZywdSmt1SvBY64iN98RDwtYY" style="width:30%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      
+    </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
